@@ -25,6 +25,8 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.setAttribute(QtCore.Qt.WA_DeleteOnClose)
 
         self.actionQuit.triggered.connect(self.quit)
+        self.actionQuit.triggered.connect(self.quit)
+        self.actionQuit.triggered.connect(self.quit)
         
       
     def ping(self):
@@ -35,7 +37,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
     def quit(self):
         print("Well, bye.")
-        QtWidgets.QApplication.quit()
+        QtWidgets.qApp.quit()
                 
 if __name__ == '__main__':
     app = QtWidgets.QApplication(sys.argv)  # A new instance of QApplication
